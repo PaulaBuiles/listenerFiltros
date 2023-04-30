@@ -1,0 +1,61 @@
+PREGUNTA 9.
+
+getRequestDispatcher().forward() realiza un redireccionamiento interno en el lado del servidor.
+Esto significa que la solicitud original del usuario se envía a otra página web en el servidor, que luego procesa la solicitud y devuelve una respuesta al usuario.
+El usuario no es consciente de que se ha realizado un reenvío, ya que la URL que ve en su navegador sigue siendo la misma.
+
+Mientras que, sendRedirect() realiza un redireccionamiento externo en el lado del cliente.
+Esto significa que el servidor envía una respuesta al navegador del usuario que incluye una nueva dirección URL a la que el navegador del usuario debe redirigirse.
+El usuario verá la nueva URL en su navegador y su navegador enviará una nueva solicitud HTTP al servidor para obtener la nueva página.
+
+PREGUNTA 10:
+
+Los códigos de estado de respuestas Http proporcionan información sobre el estado de la respuesta.
+Son importantes porque permiten que los clientes HTTP, como los navegadores web, sepan si la solicitud se ha completado correctamente y cómo deben manejar la respuesta recibida.
+Estas respuestas se dividen en 5 clases:
+
+1xx (Respuestas informativas): se utilizan para informar al cliente de que la solicitud se ha recibido y se está procesando.
+
+2xx (Respuestas satisfactorias): se utilizan para indicar que la solicitud se ha completado correctamente.
+
+3xx (Redirecciones): se utilizan para indicar que el cliente debe tomar alguna acción adicional para completar la solicitud.
+
+4xx (Errores del cliente): se utilizan para indicar que ha ocurrido un error en la solicitud debido a un error del cliente.
+
+5xx (Errores del servidor): se utilizan para indicar que ha ocurrido un error en el servidor al procesar la solicitud.
+
+Algunos de los códigos de estado más comunes son:
+
+200 OK: se utiliza para indicar que la solicitud se ha completado correctamente.
+
+301 Moved Permanently: se utiliza para redirigir permanentemente una URL a otra ubicación.
+
+404 Not Found: se utiliza para indicar que el recurso solicitado no se ha encontrado en el servidor.
+
+500 Internal Server Error: se utiliza para indicar que se ha producido un error en el servidor al procesar la solicitud.
+
+PREGUNTA 16:
+
+Las sesiones y las cookies son dos formas comunes de almacenar información en el lado del cliente en aplicaciones web.
+Las principales diferencias entre ellas:
+
+Almacenamiento: Las cookies se almacenan en el lado del cliente como archivos de texto plano, mientras que las sesiones se almacenan en el servidor.
+
+Tamaño: Las cookies tienen un límite de tamaño, que varía según el navegador, pero generalmente es de unos pocos kilobytes. Las sesiones pueden ser más grandes, ya que se almacenan en el servidor.
+
+Duración: Las cookies pueden tener una fecha de caducidad, lo que significa que se eliminan automáticamente después de un tiempo determinado.
+Las sesiones pueden ser eliminadas de varias maneras: expiran después de un período de inactividad, se eliminan manualmente por el servidor o el usuario, o cuando se cierra el navegador.
+
+Seguridad: Las cookies son más susceptibles a los ataques de seguridad, como el robo de identidad o la suplantación de identidad.
+Las sesiones son más seguras, ya que la información se almacena en el servidor y no en el cliente.
+
+Acceso: Las cookies se pueden leer y escribir tanto en el lado del cliente como en el servidor. Las sesiones solo pueden ser leídas y escritas por el servidor.
+
+Aplicaciones: Las cookies se utilizan comúnmente para recordar las preferencias del usuario, como las opciones de idioma o las credenciales de inicio de sesión.
+Las sesiones se utilizan comúnmente para almacenar información temporal, como los elementos de un carrito de compras en línea.
+
+En resumen, las cookies son útiles para almacenar información en el lado del cliente y permitir la personalización de la experiencia del usuario,
+mientras que las sesiones son útiles para almacenar información temporal en el lado del servidor y mantener la seguridad de la información del usuario.
+
+
+
